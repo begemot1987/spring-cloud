@@ -33,26 +33,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
 		</dependency>
-
-		<!-- dependency to add posibility to represent data in xml format.
-		 Postman -> headers -> Accept -> application/xml 
+		<!-- dependency to add possibility to represent data in xml format.
+		 Postman -> headers -> Accept -> application/xml -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
-		</dependency>-->
-
-		<!-- springdoc openapi documentation https://springdoc.org/ 
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-core</artifactId>
-			<version>1.1.49</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.1.49</version>
-		</dependency>-->
-
+			<version>1.6.5</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
