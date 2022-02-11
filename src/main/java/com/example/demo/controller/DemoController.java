@@ -16,7 +16,7 @@ public class DemoController {
 	@Autowired
 	private MessageSource messageSource;
 	
-	@GetMapping
+	@GetMapping("/hello")
 	public HelloWorldBean test() {
 		return new HelloWorldBean("Hello world");
 	}
