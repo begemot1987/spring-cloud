@@ -3,16 +3,22 @@ package com.example.demo.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
+@Entity
 public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Size(min = 3, message = "Name shoud have atleast 2 charaters")
 	private String name;
 	@Past(message = "birthDate should be in past")
 	private Date birthDate;
-	private List<Post> posts;
 	
 	public User() {
 	}
@@ -45,13 +51,5 @@ public class User {
 	
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
-	}
-
-	public List<Post> getPosts() {
-		return posts;
-	}
-
-	public void setPosts(List<Post> posts) {
-		this.posts = posts;
 	}
 }

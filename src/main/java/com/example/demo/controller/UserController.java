@@ -26,7 +26,6 @@ public class UserController {
 	private final UserDao userDao;
 	
 	public UserController(UserDao userDao) {
-		super();
 		this.userDao = userDao;
 	}
 	
